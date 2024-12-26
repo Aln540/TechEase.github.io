@@ -112,13 +112,13 @@ function createParticles() {
 document.addEventListener('DOMContentLoaded', createParticles);
 
 (function() {
-    emailjs.init("Js4Frm0FX1TQyVBPG"); // Replace with your EmailJS user ID
+    emailjs.init("JkDQot_1hobwlYp79"); // Replace with your EmailJS user ID
 
     document.getElementById('contactForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
 
         // Send the form data using EmailJS
-        emailjs.sendForm('Js4Frm0FX1TQyVBPG', 'template_d7bauxn', this)
+        emailjs.sendForm('JkDQot_1hobwlYp79', 'template_d7bauxn', this)
             .then(function() {
                 alert('Message envoyé avec succès !');
                 document.getElementById('contactForm').reset(); // Reset the form after submission
