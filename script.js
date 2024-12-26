@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', createParticles);
         event.preventDefault(); // Prevent the default form submission
 
         // Send the form data using EmailJS
-        emailjs.sendForm('service_4j6wzb7', '__ejs-test-mail-service__', this)
+        emailjs.sendForm('service_4j6wzb7', 'template_d7bauxn', this)
             .then(function() {
                 alert('Message envoyé avec succès !');
                 document.getElementById('contactForm').reset(); // Reset the form after submission
